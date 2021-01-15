@@ -1,0 +1,8 @@
+version: '3'
+services:
+  puppet_server:
+    image: puppet/puppetserver:6.14.1
+    # links:
+    #     - puppet_client_1
+    volumes:
+        - ./code:/etc/puppetlabs/code/
